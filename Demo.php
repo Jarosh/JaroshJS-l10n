@@ -5,7 +5,7 @@
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
         <script type="text/javascript" src="Jarosh-l10n.js"></script>
         <script type="text/javascript">
-            Jarosh.l10n.LOC = <?= json_encode(require('l10n/ru_RU.php')); ?>;
+            Jarosh.l10n.LOC = <?= json_encode(require('l10n/es_ES.php')); ?>;
         </script>
     </head>
     <body></body>
@@ -24,7 +24,7 @@
         
         var loc = Jarosh.l10n;
         
-        document.writeln( loc('TestPage', 'smb_wrote_you', null, { weight:45, height: 180, num:40 }) );
+        document.writeln( loc('TestPage', 'smb_wrote_you', null, { weight:45, height: 180, num:1 }) );
         document.writeln( loc('TestPage', 'smb_wrote_you', null, { weight:78, height: 170, num:21 }) );
         document.writeln( loc('TestPage', 'smb_wrote_you', null, { age: 25, gender:'Male', weight:60, height: 170, num:4 }) );
         document.writeln( loc('TestPage', 'smb_wrote_you', null, { age: 15, gender:'Female', weight:45, height: 155, num:101 }) );
