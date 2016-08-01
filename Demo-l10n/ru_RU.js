@@ -28,7 +28,12 @@ Jarosh.l10n.LOC = {
    },
    "":{  
       "welcome":"Добро пожаловать на демо-страницу JaroshJS-l10n",
-      "today":"Сегодня",
+      "today":[
+          "Сегодня ",
+          ["d"],
+          " ",
+          ["m"]
+      ],
       "month_01":[  
          [  
             "inflect:ask",

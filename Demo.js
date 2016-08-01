@@ -1,18 +1,22 @@
 function demo(loc) {
-    Jarosh.l10n.LOC = LOC[loc];
+    if (typeof loc != 'undefined')
+        Jarosh.l10n.LOC = LOC[loc];
     
     var out = '';
     
-    out += '<p>' + Jarosh.l10n(null, 'welcome', null) + '</p>';
+    out += '<p style="font-weight:bold;">' + Jarosh.l10n(null, 'welcome', null) + '</p>';
 
-    out += '<p>'
-        + Jarosh.l10n(null, 'today', null)
-        + ' '+(new Date()).getDate()+' '
-        + Jarosh.l10n(null, 'month_'+('0'+((new Date()).getMonth()+1)).slice(-2), null, { ask: 'чего?' }).toLowerCase()
+    out += '<p style="font-weight:bold;">'
+        + Jarosh.l10n(null, 'today', null, {
+            d : (new Date()).getDate(),
+            m : Jarosh.l10n(null, 'month_'+('0'+((new Date()).getMonth()+1)).slice(-2), null, { ask: 'чего?' })
+        })
         + '</p>';
 
-    out += '<p>' + Jarosh.l10n('TestPage', 'unexisting_key', 'Oops! Not localized!') + '</p>';
+    out += '<p style="font-style:italic;">' + Jarosh.l10n('TestPage', 'unexisting_key', 'Oops! Not localized!') + '</p>';
 
+    out += '<hr/>';
+    
     // setting up a short alias...
     var loc = Jarosh.l10n;
 

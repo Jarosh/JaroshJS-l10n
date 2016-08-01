@@ -30,7 +30,7 @@
 
     '' => [
         'welcome'   => 'Welcome to the JaroshJS-l10n demo page',
-        'today'     => 'Today is',
+        'today'     => [ 'Today is ', ['m'], ' ', ['d'] ],
         'month_01'  => 'January',
         'month_02'  => 'February',
         'month_03'  => 'March',

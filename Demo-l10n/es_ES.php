@@ -31,7 +31,7 @@
 
     '' => [
         'welcome'   => 'La bienvenida a la página del JaroshJS-l10n',
-        'today'     => 'Hoy es el',
+        'today'     => [ 'Hoy es el ', ['d'], ' de ', ['m'] ],
         'month_01'  => 'enero',
         'month_02'  => 'febrero',
         'month_03'  => 'marzo',
