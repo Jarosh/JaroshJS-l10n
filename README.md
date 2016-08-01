@@ -2,11 +2,11 @@
 
 Internationalization (i18n) and localization (l10n) of JavaScript applications
 may seem easy enough when you think of it from English language perspective.
-You may think there's nothing easier then taking lexems off of your either HTML
-or JS code and place them in a separate file as an associative array under
-shortened keys... unless you faced other languages with half a dozen of noun
-cases, conjugation of adjectives  depending on number of associated noun
-etc. etc. etc.
+It may seem there's nothing easier then taking lexems/phrases out of your either
+HTML or JS code and place them in a separate file as an associative array under
+shortened keys... unless you've faced other languages with half a dozen of noun
+cases, inflection of adjectives depending on number of associated noun, verbs 
+conjugation etc. etc. etc.
 
 This tiny library was invented with few major ideas in mind:
 - application's code shouldn't care about inflections and conjugations;
@@ -17,9 +17,9 @@ packages they belong to and be as primitive as possible;
 ***
 
 Here's how it works. Every language pack is an object (associative array in
-terms of PHP if you;ll decide to store your packs using PHP to be able easily
+terms of PHP if you'll decide to store your packs using PHP to be able easily
 access all the lexems on server side etc.) Top level keys are used for grouping
-of lexems. One top level key have a special meaning however.
+of lexems. One top level key have a special meaning however, it's __-fun__
 
 
 __-fun__ subobject contains all the formatting and conjugation rules for a given
@@ -40,8 +40,8 @@ their direct names or by index number appended to 'x' ('x' itself is a synonym
 of 'x1').
 
 
-Check for Demo where an edge case of localization of non-trivial phrases.
+Check for Demo where an edge case of localization of non-trivial phrases is shown.
 **Some examples may seem politically incorrect, but I'm dumb when it comes to
-composing good examples, so imagine yourself writing dating service for people
+composing good demos, so imagine yourself writing a dating service for people
 concerned about BMI (Body Mass Index) or something like that, and excuse me in
 advance.**
